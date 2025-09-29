@@ -16,9 +16,9 @@ export const JewelsChallenge = ({ onComplete }: JewelsChallengeProps) => {
   const [showHints, setShowHints] = useState(false);
 
   const handleDownload = () => {
-    // Create a link to download the images.png from public folder
+    // Create a link to download the royal-crown-jewels.png from public folder
     const link = document.createElement("a");
-    link.href = "/images.png";
+    link.href = "/royal-crown-jewels.png";
     link.download = "royal-crown-jewels.png";
     link.click();
     setHasDownloaded(true);
